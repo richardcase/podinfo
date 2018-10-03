@@ -36,11 +36,12 @@ docker-build: tar
 
 	docker build -t $(DOCKER_IMAGE_NAME):$(GITCOMMIT) build/docker/linux ;\
 	docker tag $(DOCKER_IMAGE_NAME):$(GITCOMMIT) $(DOCKER_IMAGE_NAME):$(VERSION) ;\
+	docker tag $(DOCKER_IMAGE_NAME):$(GITCOMMIT) $(DOCKER_IMAGE_NAME):$(TAG) ;\
 
 .PHONY: docker-push
 docker-push:
 	@echo Pushing: $(VERSION) to $(DOCKER_IMAGE_NAME)
-    docker push $(DOCKER_IMAGE_NAME):$(GITCOMMIT) ;\
+    docker push $(DOCKER_IMAGE_NAME) ;\
 
 .PHONY: clean
 clean:
