@@ -55,19 +55,14 @@ spec:
               containerPort: {{ .Values.containerPort }}
               protocol: TCP
           livenessProbe:
-            exec:
-              command:
-              - podcli
-              - check
-              - http
-              - localhost:{{ .Values.containerPort }}/healthz
+            httpGet:
+              path: /healthz
+              part: {{ .Values.containerPort }}
+            periodSeconds: 3
           readinessProbe:
-            exec:
-              command:
-              - podcli
-              - check
-              - http
-              - localhost:{{ .Values.containerPort }}/readyz
+            httpGet:
+              path: /readyz
+              part: {{ .Values.containerPort }}
             periodSeconds: 3
           volumeMounts:
           - name: data

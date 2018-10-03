@@ -3,9 +3,9 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2018-10-03T10:56:36.496794325+01:00
+    created: 2018-10-03T13:00:23.925117733+01:00
     description: A Helm chart for Datawire Ambassador
-    digest: d188d1977f5882324b67439e49f52341d2ff7d40128ea8479e9df561af86985e
+    digest: a18540ab026fe1cdaf2cc74546209e6cd809759df6cdba6860a7426d1fa91436
     engine: gotpl
     maintainers:
     - email: richardcase@users.noreply.github.com
@@ -19,9 +19,9 @@ entries:
   grafana:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-10-03T10:56:36.497732545+01:00
+    created: 2018-10-03T13:00:23.926131444+01:00
     description: A Helm chart for Kubernetes
-    digest: c56bd3fa78a32c2e7a4b77d307e2e67eb69831143a6620ac0a4c696c9b466496
+    digest: 0e2a6d381243952e2452df659b4dae129965cefc9a44f504562b1a6274492f12
     name: grafana
     urls:
     - https://richardcase.github.io/podinfo/grafana-0.1.0.tgz
@@ -29,9 +29,9 @@ entries:
   loadtest:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-10-03T10:56:36.49802538+01:00
+    created: 2018-10-03T13:00:23.926437716+01:00
     description: Hey load test Helm chart for Kubernetes
-    digest: e4c3a86b2c0790e9a467a22c6881d55706761cda745fe79a3a73baf71d77ab6f
+    digest: 8bfe03390cd30f10f7d09eaaaa38b299fac9a84e88b2fc14f4c0e272b9f10a27
     name: loadtest
     urls:
     - https://richardcase.github.io/podinfo/loadtest-0.1.0.tgz
@@ -39,9 +39,9 @@ entries:
   ngrok:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-10-03T10:56:36.498422877+01:00
+    created: 2018-10-03T13:00:23.926792745+01:00
     description: A Ngrok Helm chart for Kubernetes
-    digest: 4d466ab4e2625b1275db56d8e135081628535a5e1fba429a937e2e607f8e2cf3
+    digest: 935258823237be4c8ad0b962fd0663453b32a003d0d643bd699b061ebefb85b6
     name: ngrok
     urls:
     - https://richardcase.github.io/podinfo/ngrok-0.1.0.tgz
@@ -49,9 +49,9 @@ entries:
   podinfo:
   - apiVersion: v1
     appVersion: 1.2.1
-    created: 2018-10-03T10:56:36.498943257+01:00
+    created: 2018-10-03T13:00:23.927295618+01:00
     description: Podinfo Helm chart for Kubernetes
-    digest: bd139f9ad3a5140411817bf8f9e41c58dec71af8dc23442bb7ac07719f1602bb
+    digest: 83fec552f9e0ec62feb1a1230d4ae0c6c2bd74546291d7e68d0abd79590a318b
     engine: gotpl
     home: https://github.com/richardcase/podinfo
     maintainers:
@@ -178,9 +178,9 @@ entries:
   podinfo-istio:
   - apiVersion: v1
     appVersion: 1.2.1
-    created: 2018-10-03T10:56:36.499693824+01:00
+    created: 2018-10-03T13:00:23.928099916+01:00
     description: Podinfo Helm chart for Istio
-    digest: 5590aba24d6d8a47fe4545d1ef18c77218e46be07b504b4e4f3d425dbbf56b4f
+    digest: 53b4f5df418293ba4a8043a581681e6385d21af290c046cc1ed638815c40a97d
     engine: gotpl
     home: https://github.com/richardcase/podinfo
     maintainers:
@@ -240,4 +240,4 @@ entries:
     urls:
     - https://richardcase.github.io/podinfo/podinfo-istio-0.1.0.tgz
     version: 0.1.0
-generated: 2018-10-03T10:56:36.494016875+01:00
+generated: 2018-10-03T13:00:23.924189994+01:00
