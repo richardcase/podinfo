@@ -1,0 +1,243 @@
+apiVersion: v1
+entries:
+  ambassador:
+  - apiVersion: v1
+    appVersion: 0.29.0
+    created: 2018-10-02T16:48:14.449722773+01:00
+    description: A Helm chart for Datawire Ambassador
+    digest: 863d0377962d732c7196c255365f9824f087c32d78b9d9627dd54c5ba9c820a3
+    engine: gotpl
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: ambassador
+    sources:
+    - https://github.com/datawire/ambassador
+    urls:
+    - https://richardcase.github.io/podinfo/ambassador-0.1.0.tgz
+    version: 0.1.0
+  grafana:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-10-02T16:48:14.450797204+01:00
+    description: A Helm chart for Kubernetes
+    digest: 0d4c8fe58c8c04692447359144d24edbe8bb5801b25a5b84cfc35eda54e6e626
+    name: grafana
+    urls:
+    - https://richardcase.github.io/podinfo/grafana-0.1.0.tgz
+    version: 0.1.0
+  loadtest:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-10-02T16:48:14.451085566+01:00
+    description: Hey load test Helm chart for Kubernetes
+    digest: 02da8b43e71f9f4d0180fe96d2574c86276f3eac14cef7ac1f5e7085b32678dd
+    name: loadtest
+    urls:
+    - https://richardcase.github.io/podinfo/loadtest-0.1.0.tgz
+    version: 0.1.0
+  ngrok:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-10-02T16:48:14.451442826+01:00
+    description: A Ngrok Helm chart for Kubernetes
+    digest: 2105707869ca4f665dbd1399de9ef49c8227ab1478a1ca47f6bcc76c282bbeee
+    name: ngrok
+    urls:
+    - https://richardcase.github.io/podinfo/ngrok-0.1.0.tgz
+    version: 0.1.0
+  podinfo:
+  - apiVersion: v1
+    appVersion: 1.2.1
+    created: 2018-10-02T16:48:14.460136936+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: fd798daf6404d2e97255bd75138de3c732022ef912a169d04ad14c20df54d927
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-1.2.1.tgz
+    version: 1.2.1
+  - apiVersion: v1
+    appVersion: 1.2.0
+    created: 2018-10-02T16:48:14.459533456+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: 24460e15e6da77106eb5212cd683dc2c1d4404b927be6b9f0c89433ba865722e
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: 2018-10-02T16:48:14.458377376+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: 973d60c629d7ae476776098ad6b654d78d91f91b3faa8bc016b94c73c42be094
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: 2018-10-02T16:48:14.45716868+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: 82068727ba5b552341b14a980e954e27a8517f0ef76aab314c160b0f075e6de4
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v1
+    appVersion: 0.6.0
+    created: 2018-10-02T16:48:14.456056636+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: bd25a710eddb3985d3bd921a11022b5c68a04d37cf93a1a4aab17eeda35aa2f8
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v1
+    appVersion: 0.5.1
+    created: 2018-10-02T16:48:14.454978097+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: 631ca3e2db5553541a50b625f538e6a1f2a103c13aa8148fdd38baf2519e5235
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v1
+    appVersion: 0.5.0
+    created: 2018-10-02T16:48:14.45381701+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: dfe7cf44aef0d170549918b00966422a07e7611f9d0081fb34f5b5beb0641c00
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: 0.3.0
+    created: 2018-10-02T16:48:14.452608197+01:00
+    description: Podinfo Helm chart for Kubernetes
+    digest: 4865a2d8b269cf453935cda9661c2efb82c16411471f8c11221a6d03d9bb58b1
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-0.1.0.tgz
+    version: 0.1.0
+  podinfo-istio:
+  - apiVersion: v1
+    appVersion: 1.2.1
+    created: 2018-10-02T16:48:14.465222794+01:00
+    description: Podinfo Helm chart for Istio
+    digest: ec9d01a79dae9cf261dc1ad446e14391b04f91ea361a99e4e5584e3c42f143a6
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo-istio
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-istio-1.2.1.tgz
+    version: 1.2.1
+  - apiVersion: v1
+    appVersion: 1.2.0
+    created: 2018-10-02T16:48:14.464620771+01:00
+    description: Podinfo Helm chart for Istio
+    digest: 8115e72f232f82eb3e6da1965364cfede7c069f95a627dddac45cfbe6cb90dc4
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo-istio
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-istio-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: 2018-10-02T16:48:14.463531289+01:00
+    description: Podinfo Helm chart for Istio
+    digest: bcceb63ff780a8f0ba0b30997040e4e82170f9cce17c26ec817648ed024c83f5
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo-istio
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-istio-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: 0.6.0
+    created: 2018-10-02T16:48:14.462087977+01:00
+    description: Podinfo Helm chart for Istio
+    digest: f12f8aa1eca1328e9eaa30bd757f6ed3ff97205e2bf016a47265bc2de6a63d8f
+    engine: gotpl
+    home: https://github.com/richardcase/podinfo
+    maintainers:
+    - email: richardcase@users.noreply.github.com
+      name: richardcase
+    name: podinfo-istio
+    sources:
+    - https://github.com/richardcase/podinfo
+    urls:
+    - https://richardcase.github.io/podinfo/podinfo-istio-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-10-02T16:48:14.44821428+01:00

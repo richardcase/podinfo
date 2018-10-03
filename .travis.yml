@@ -1,0 +1,31 @@
+sudo: required
+language: go
+
+go:
+  - 1.11.x
+
+services:
+  - docker
+
+addons:
+  apt:
+    packages:
+      - docker-ce
+
+before_install:
+  - make dep
+
+script:
+  - make test
+  - ./scripts/docker-build.sh
+#  - make build docker-build
+
+after_success:
+  - scripts/docker-push.sh
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: curl -sL http://git.io/goreleaser | bash
+    on:
+      tags: true
