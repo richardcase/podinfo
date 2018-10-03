@@ -41,7 +41,7 @@ docker-build: tar
 .PHONY: docker-push
 docker-push:
 	@echo Pushing: $(VERSION) to $(DOCKER_IMAGE_NAME)
-    docker push $(DOCKER_IMAGE_NAME) ;\
+	docker push $(DOCKER_IMAGE_NAME) ;\
 
 .PHONY: clean
 clean:
