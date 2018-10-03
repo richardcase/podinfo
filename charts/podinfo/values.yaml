@@ -19,7 +19,7 @@ service:
   type: ClusterIP
   externalPort: 9898
   containerPort: 9898
-  nodePort: 31198
+  #nodePort: 31198
 
 # metrics-server add-on required
 hpa:
