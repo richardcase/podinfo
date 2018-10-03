@@ -65,11 +65,11 @@ dep:
 
 .PHONY: charts
 charts:
-	cd charts/ && helm package podinfo/
-	cd charts/ && helm package podinfo-istio/
-	cd charts/ && helm package loadtest/
-	cd charts/ && helm package ambassador/
-	cd charts/ && helm package grafana/
-	cd charts/ && helm package ngrok/
-	mv charts/*.tgz docs/
+	cd charts_flux/ && helm package podinfo/
+	cd charts_flux/ && helm package podinfo-istio/
+	cd charts_flux/ && helm package loadtest/
+	cd charts_flux/ && helm package ambassador/
+	cd charts_flux/ && helm package grafana/
+	cd charts_flux/ && helm package ngrok/
+	mv charts_flux/*.tgz docs/
 	helm repo index docs --url https://richardcase.github.io/podinfo --merge ./docs/index.yaml
