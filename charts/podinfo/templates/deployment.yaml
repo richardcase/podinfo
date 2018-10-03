@@ -60,12 +60,12 @@ spec:
           livenessProbe:
             httpGet:
               path: /healthz
-              part: {{ .Values.service.containerPort }}
+              port: {{ .Values.service.containerPort }}
             periodSeconds: 3
           readinessProbe:
             httpGet:
               path: /readyz
-              part: {{ .Values.service.containerPort }}
+              port: {{ .Values.service.containerPort }}
             periodSeconds: 3
           volumeMounts:
           - name: data
