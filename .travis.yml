@@ -17,11 +17,15 @@ before_install:
 
 script:
   - make test
-  - ./scripts/docker-build.sh
-#  - make build docker-build
+  - make build docker-build
 
 after_success:
-  - scripts/docker-push.sh
+  - if [ -z "$DOCKER_USER" ]; then
+      echo "PR build, skipping Docker Hub push";
+    else
+      echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin;
+      make docker-push;
+    fi
 
 deploy:
   - provider: script
