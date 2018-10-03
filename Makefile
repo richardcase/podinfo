@@ -37,9 +37,9 @@ docker-build: tar
 	docker build -t $(DOCKER_IMAGE_NAME):$(GITCOMMIT) build/docker/linux ;\
 	docker tag $(DOCKER_IMAGE_NAME):$(GITCOMMIT) $(DOCKER_IMAGE_NAME):$(VERSION) ;\
 	docker tag $(DOCKER_IMAGE_NAME):$(GITCOMMIT) $(DOCKER_IMAGE_NAME):$(TAG) ;\
-	if [ -n "$(TRAVIS_BUILD_NUMBER)" ]; then
-		docker tag $(DOCKER_IMAGE_NAME):$(GITCOMMIT) $(DOCKER_IMAGE_NAME):build-$(TRAVIS_BUILD_NUMBER) ;\
-	fi
+#	if [ -n "$(TRAVIS_BUILD_NUMBER)" ]; then
+#		docker tag $(DOCKER_IMAGE_NAME):$(GITCOMMIT) $(DOCKER_IMAGE_NAME):build-$(TRAVIS_BUILD_NUMBER) ;\
+#	fi
 
 .PHONY: docker-push
 docker-push:
