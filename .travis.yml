@@ -33,3 +33,7 @@ deploy:
     script: curl -sL http://git.io/goreleaser | bash
     on:
       tags: true
+
+env:
+    global:
+      - COMMIT=${TRAVIS_COMMIT::8}

@@ -5,7 +5,7 @@ EMPTY:=
 SPACE:=$(EMPTY) $(EMPTY)
 COMMA:=$(EMPTY),$(EMPTY)
 NAME:=podinfo
-DOCKER_REPOSITORY:=docker.io/richardcase
+DOCKER_REPOSITORY:=richardcase
 DOCKER_IMAGE_NAME:=$(DOCKER_REPOSITORY)/$(NAME)
 GITREPO:=github.com/richardcase/podinfo
 GITCOMMIT:=$(shell git describe --dirty --always)
@@ -34,13 +34,13 @@ docker-build: tar
 	cp Dockerfile build/docker/linux ;\
 	cp Dockerfile build/docker/linux/Dockerfile.in ;\
 
-	docker build -t $(NAME) build/docker/linux ;\
-	docker tag $(NAME) $(DOCKER_IMAGE_NAME):$(NAME) ;\
+	docker build -t $(DOCKER_IMAGE_NAME):$(GITCOMMIT) build/docker/linux ;\
+	docker tag $(DOCKER_IMAGE_NAME):$(GITCOMMIT) $(DOCKER_IMAGE_NAME):$(VERSION) ;\
 
 .PHONY: docker-push
 docker-push:
 	@echo Pushing: $(VERSION) to $(DOCKER_IMAGE_NAME)
-    docker push $(DOCKER_IMAGE_NAME):$(NAME) ;\
+    docker push $(DOCKER_IMAGE_NAME):$(GITCOMMIT) ;\
 
 .PHONY: clean
 clean:
